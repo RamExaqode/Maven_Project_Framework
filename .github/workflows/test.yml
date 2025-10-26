@@ -23,13 +23,14 @@ jobs:
         run: mvn clean test
 
       - name: Upload ExtentReport
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
+
         with:
           name: extent-report
           path: target/test-output/extentReport.html
 
       - name: Upload Log File
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-log
           path: target/test-output/logs/test.log
