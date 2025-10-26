@@ -17,7 +17,7 @@ public class RegisterPage {
     By firstName = By.cssSelector("input[placeholder='First Name']");
     By lastName = By.cssSelector("input[placeholder='Last Name']");
     By address = By.cssSelector("textarea[ng-model='Adress']");
-    By email = By.cssSelector("input[type='email']");
+    By email = By.cssSelector("input[type='gmail']");
     By phone = By.cssSelector("input[type='tel']");
 
     // Actions
