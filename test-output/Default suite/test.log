@@ -1,0 +1,25 @@
+2025-10-26 12:12:24,611 [main] INFO  utils.ConfigReader - Loaded config.properties successfully
+2025-10-26 12:12:24,612 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:12:24,613 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:12:28,071 [main] INFO  pages.RegisterPage - Entering first name: Ram
+2025-10-26 12:12:28,250 [main] INFO  pages.RegisterPage - Entering last name: Marshivane
+2025-10-26 12:12:28,366 [main] INFO  pages.RegisterPage - Entering address: 123 Street, Pune
+2025-10-26 12:12:28,522 [main] INFO  pages.RegisterPage - Entering email: ram@example.com
+2025-10-26 12:12:28,614 [main] INFO  pages.RegisterPage - Entering phone number: 9876543210
+2025-10-26 12:12:28,718 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 12:12:28,891 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:12:28,892 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:12:30,708 [main] INFO  pages.RegisterPage - Entering first name: Sita
+2025-10-26 12:12:30,844 [main] INFO  pages.RegisterPage - Entering last name: Verma
+2025-10-26 12:12:30,928 [main] INFO  pages.RegisterPage - Entering address: 456 Lane, Mumbai
+2025-10-26 12:12:31,060 [main] INFO  pages.RegisterPage - Entering email: sita@example.com
+2025-10-26 12:12:31,162 [main] INFO  pages.RegisterPage - Entering phone number: 9123456789
+2025-10-26 12:12:31,299 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 12:12:31,429 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:12:31,430 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:12:33,144 [main] INFO  pages.RegisterPage - Entering first name: Lakshman
+2025-10-26 12:12:33,244 [main] INFO  pages.RegisterPage - Entering last name: Sharma
+2025-10-26 12:12:33,328 [main] INFO  pages.RegisterPage - Entering address: 789 Road, Delhi
+2025-10-26 12:12:33,423 [main] INFO  pages.RegisterPage - Entering email: lakshman@example.com
+2025-10-26 12:12:33,560 [main] INFO  pages.RegisterPage - Entering phone number: 9988776655
+2025-10-26 12:12:33,666 [main] INFO  utils.DriverFactory - Closing browser

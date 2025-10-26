@@ -1,0 +1,50 @@
+2025-10-26 11:59:11,125 [main] INFO  utils.ConfigReader - Loaded config.properties successfully
+2025-10-26 11:59:11,126 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 11:59:11,126 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 11:59:13,908 [main] INFO  pages.RegisterPage - Entering first name: Ram
+2025-10-26 11:59:14,032 [main] INFO  pages.RegisterPage - Entering last name: Marshivane
+2025-10-26 11:59:14,111 [main] INFO  pages.RegisterPage - Entering address: 123 Street, Pune
+2025-10-26 11:59:14,234 [main] INFO  pages.RegisterPage - Entering email: ram@example.com
+2025-10-26 11:59:14,416 [main] INFO  pages.RegisterPage - Entering phone number: 9876543210
+2025-10-26 11:59:14,539 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 11:59:14,688 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 11:59:14,688 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 11:59:16,948 [main] INFO  pages.RegisterPage - Entering first name: Sita
+2025-10-26 11:59:17,065 [main] INFO  pages.RegisterPage - Entering last name: Verma
+2025-10-26 11:59:17,161 [main] INFO  pages.RegisterPage - Entering address: 456 Lane, Mumbai
+2025-10-26 11:59:17,296 [main] INFO  pages.RegisterPage - Entering email: sita@example.com
+2025-10-26 11:59:17,420 [main] INFO  pages.RegisterPage - Entering phone number: 9123456789
+2025-10-26 11:59:17,534 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 11:59:17,727 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 11:59:17,727 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 11:59:19,414 [main] INFO  pages.RegisterPage - Entering first name: Lakshman
+2025-10-26 11:59:19,519 [main] INFO  pages.RegisterPage - Entering last name: Sharma
+2025-10-26 11:59:19,637 [main] INFO  pages.RegisterPage - Entering address: 789 Road, Delhi
+2025-10-26 11:59:19,813 [main] INFO  pages.RegisterPage - Entering email: lakshman@example.com
+2025-10-26 11:59:19,895 [main] INFO  pages.RegisterPage - Entering phone number: 9988776655
+2025-10-26 11:59:19,970 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 12:05:32,150 [main] INFO  utils.ConfigReader - Loaded config.properties successfully
+2025-10-26 12:05:32,151 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:05:32,151 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:05:36,105 [main] INFO  pages.RegisterPage - Entering first name: Ram
+2025-10-26 12:05:36,411 [main] INFO  pages.RegisterPage - Entering last name: Marshivane
+2025-10-26 12:05:36,600 [main] INFO  pages.RegisterPage - Entering address: 123 Street, Pune
+2025-10-26 12:05:37,091 [main] INFO  pages.RegisterPage - Entering email: ram@example.com
+2025-10-26 12:05:37,284 [main] INFO  pages.RegisterPage - Entering phone number: 9876543210
+2025-10-26 12:05:37,468 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 12:05:37,693 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:05:37,693 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:05:39,856 [main] INFO  pages.RegisterPage - Entering first name: Sita
+2025-10-26 12:05:40,039 [main] INFO  pages.RegisterPage - Entering last name: Verma
+2025-10-26 12:05:40,248 [main] INFO  pages.RegisterPage - Entering address: 456 Lane, Mumbai
+2025-10-26 12:05:40,421 [main] INFO  pages.RegisterPage - Entering email: sita@example.com
+2025-10-26 12:05:40,685 [main] INFO  pages.RegisterPage - Entering phone number: 9123456789
+2025-10-26 12:05:40,852 [main] INFO  utils.DriverFactory - Closing browser
+2025-10-26 12:05:41,074 [main] INFO  utils.DriverFactory - Requested browser: chrome
+2025-10-26 12:05:41,074 [main] INFO  utils.DriverFactory - Launching Chrome browser
+2025-10-26 12:05:42,992 [main] INFO  pages.RegisterPage - Entering first name: Lakshman
+2025-10-26 12:05:43,127 [main] INFO  pages.RegisterPage - Entering last name: Sharma
+2025-10-26 12:05:43,266 [main] INFO  pages.RegisterPage - Entering address: 789 Road, Delhi
+2025-10-26 12:05:43,435 [main] INFO  pages.RegisterPage - Entering email: lakshman@example.com
+2025-10-26 12:05:43,560 [main] INFO  pages.RegisterPage - Entering phone number: 9988776655
+2025-10-26 12:05:43,675 [main] INFO  utils.DriverFactory - Closing browser
