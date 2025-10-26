@@ -13,7 +13,7 @@ public class RegisterPage {
         this.driver = driver;
     }
 
-    // Locators
+    // CSS Locators
     By firstName = By.cssSelector("input[placeholder='First Name']");
     By lastName = By.cssSelector("input[placeholder='Last Name']");
     By address = By.cssSelector("textarea[ng-model='Adress']");
