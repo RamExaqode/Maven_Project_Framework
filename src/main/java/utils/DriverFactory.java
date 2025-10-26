@@ -5,26 +5,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory {
-    private static WebDriver driver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
-        if (driver == null) {
+        if (driver.get() == null) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--headless"); // Recommended for CI
+            options.addArguments("--headless");
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--user-data-dir=/tmp/profile-" + System.currentTimeMillis());
 
-            driver = new ChromeDriver(options);
+            driver.set(new ChromeDriver(options));
         }
-        return driver;
+        return driver.get();
     }
 
     public static void quitDriver() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
         }
     }
 }
