@@ -1,29 +1,27 @@
 package base;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
+
 import utils.DriverFactory;
+import utils.ExtentTestManager;
+
+import java.lang.reflect.Method;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected ExtentReports extent;
-    protected ExtentTest test;
+
+    @BeforeClass
+    public void setupReport() {
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(new com.aventstack.extentreports.reporter.ExtentSparkReporter("target/test-output/extentReport.html"));
+        ExtentTestManager.setExtent(extent);
+    }
 
     @BeforeMethod
-    public void setUp() {
-        // Initialize ExtentReports
-        ExtentSparkReporter spark = new ExtentSparkReporter("target/test-output/extentReport.html");
-        extent = new ExtentReports();
-        extent.attachReporter(spark);
-
-        // Create a test node with the class name
-        test = extent.createTest(getClass().getSimpleName());
-
-        // Initialize WebDriver
+    public void setUp(Method method) {
+        ExtentTestManager.startTest(method.getName());
         driver = DriverFactory.getDriver();
     }
 
@@ -32,8 +30,10 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
         }
-        if (extent != null) {
-            extent.flush();
-        }
+    }
+
+    @AfterClass
+    public void flushReport() {
+        ExtentTestManager.getExtent().flush();
     }
 }

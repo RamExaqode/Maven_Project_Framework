@@ -1,15 +1,26 @@
 package utils;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentTestManager {
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    private static ExtentReports extent;
 
-    public static ExtentTest getTest() {
-        return test.get();
+    public static void setExtent(ExtentReports reports) {
+        extent = reports;
     }
 
-    public static void setTest(ExtentTest extentTest) {
-        test.set(extentTest);
+    public static ExtentReports getExtent() {
+        return extent;
+    }
+
+    public static synchronized ExtentTest getTest() {
+        return extentTest.get();
+    }
+
+    public static synchronized void startTest(String testName) {
+        ExtentTest test = extent.createTest(testName);
+        extentTest.set(test);
     }
 }

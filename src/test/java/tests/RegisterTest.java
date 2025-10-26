@@ -11,6 +11,8 @@ public class RegisterTest extends BaseTest {
     @Test(dataProvider = "registrationData")
     public void fillRegistrationForm(String firstName, String lastName, String address, String email, String phone) {
         ExtentTestManager.getTest().info("Navigating to registration page");
+        ExtentTestManager.getTest().info("Filling registration form");
+
         driver.get(ConfigReader.get("baseUrl"));
 
         RegisterPage registerPage = new RegisterPage(driver);
